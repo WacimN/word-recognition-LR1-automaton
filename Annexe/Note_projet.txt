@@ -1,0 +1,19 @@
+Pour le Parcours des fichiers :
+    LECTURE :
+    fgetc(<fichier>)                           :lit un caractère
+        fgetc  avance le curseur d'un caractère à chaque fois que vous en lisez un. 
+        Si vous appelez fgetc  une seconde fois, la fonction lira donc le second caractère,
+        puis le troisième et ainsi de suite. Vous pouvez donc faire une boucle pour lire
+        les caractères un par un dans le fichier.
+        
+    fgets(<chaine>, <taille_chaine>,<fichier>) : lit une ligne
+    
+    
+    POSITIONNEMENT :
+        ftell(<fichier>) : retourne la position du curseur dans un fichier
+        fseek(<fichier>, <deplacement>, <origine>) : déplace le curseur
+
+            <origine> : SEEK_SET (début fichier)
+                        SEEK_CUR (position en cours)
+                        SEEK_END  (fin)
+        rewind (<fichier>): réinitialise la position du curseur 
